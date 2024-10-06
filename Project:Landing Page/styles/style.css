@@ -85,3 +85,15 @@ ul > li {
 .info {
    text-align: center;
 }
+
+.quote {
+   margin-top: 20px;
+   background-color: #E5E7EB;
+   font-size: 25px;
+   font-style: italic;
+   color: #1F2937;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
