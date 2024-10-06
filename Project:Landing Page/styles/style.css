@@ -47,15 +47,13 @@ header span {
    color: #F9FAF8;
 }
 
-
-
 button {
    background-color: #3882F6;
    border: none;
    border-radius: 5px;
    color: white;
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 25px;
+   padding-right: 25px;
    padding-top: 5px;
    padding-bottom: 5px;
    margin-top: 10px;
@@ -63,4 +61,27 @@ button {
 
 ul > li {
    display: inline-block;
+   margin-right: 20px;
+}
+
+.info h1 {
+   text-align: center;
+}
+
+.pics-info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.info img {
+   height: 100px;
+   width: 100px;
+   display: block;
+   margin-bottom: 10px;
+   border: 4px solid #3882F6;
+   border-radius: 10px;
+}
+
+.info {
+   text-align: center;
 }
