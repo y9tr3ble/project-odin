@@ -72,7 +72,8 @@ ul > li {
 
 .pics-info {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+   gap: 35px;
 }
 
 .info img {
@@ -94,16 +95,16 @@ ul > li {
 	font-size: 25px;
 	font-style: italic;
 	color: #1f2937;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 45px;
-	padding-right: 45px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .action {
 	display: flex;
-	margin-top: 30px;
-   margin-left: 35px;
+	margin-top: 45px;
+   margin-left: 45px;
    margin-right: 35px;
    border-radius: 10px;
 	background-color: #3882f6;
@@ -113,14 +114,17 @@ ul > li {
 
 .action-text {
 	color: #f9faf8;
-	padding-left: 45px;
-	padding-right: 45px;
+	padding-left: 100px;
 	padding-top: 10px;
 	padding-bottom: 25px;
 }
 
+.action-text span {
+   font-size: 15px;
+}
+
 .action-button button {
-	margin: 45px;
+	margin-right: 100px;
 	color: #f9faf8;
 	background-color: #3882f6;
 	border: 2px solid #f9faf8;
@@ -136,7 +140,7 @@ footer {
    color: #f9faf8;
    text-align: center;
    align-items: center;
-   position: fixed;
+   margin-top: 50px;
    left: 0;
    bottom: 0;
    width: 100%;
