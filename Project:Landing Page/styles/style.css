@@ -1,7 +1,7 @@
 body {
 	font-family: "Roboto", system-ui;
-   padding: 0;
-   margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 header {
@@ -30,8 +30,7 @@ header span {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-inline: 80px;
 }
 
 .about img {
@@ -73,7 +72,7 @@ ul > li {
 .pics-info {
 	display: flex;
 	justify-content: center;
-   gap: 35px;
+	gap: 35px;
 }
 
 .info img {
@@ -104,9 +103,9 @@ ul > li {
 .action {
 	display: flex;
 	margin-top: 45px;
-   margin-left: 45px;
-   margin-right: 35px;
-   border-radius: 10px;
+	margin-left: 45px;
+	margin-right: 35px;
+	border-radius: 10px;
 	background-color: #3882f6;
 	justify-content: space-between;
 	align-items: center;
@@ -120,7 +119,7 @@ ul > li {
 }
 
 .action-text span {
-   font-size: 15px;
+	font-size: 15px;
 }
 
 .action-button button {
@@ -128,22 +127,59 @@ ul > li {
 	color: #f9faf8;
 	background-color: #3882f6;
 	border: 2px solid #f9faf8;
-   border-radius: 5px;
-   padding-left: 25px;
-   padding-right: 25px;
-   padding-bottom: 5px;
-   padding-top: 5px;
+	border-radius: 5px;
+	padding-inline: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 footer {
-   background-color: #1f2937;
-   color: #f9faf8;
-   text-align: center;
-   align-items: center;
-   margin-top: 50px;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   padding-bottom: 20px;
-   padding-top: 20px;
+	background-color: #1f2937;
+	color: #f9faf8;
+	text-align: center;
+	align-items: center;
+	margin-top: 50px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+	header {
+		padding: 1rem;
+	}
+
+	.about img {
+		display: none;
+	}
+
+	.about {
+		flex-direction: column; /* Stack elements on smaller screens */
+	}
+
+	.pics-info {
+		flex-direction: column; /* Stack image cards vertically */
+		gap: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	nav ul {
+		flex-direction: column; /* Stack navigation items vertically */
+		align-items: flex-start; /* Align items to the start */
+	}
+
+	@media (max-width: 660px) {
+		.action-text {
+			padding-left: 50px;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.action-button button {
+			margin-right: 50px;
+		}
+	}
 }
