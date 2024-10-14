@@ -30,8 +30,7 @@ header span {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-inline: 80px;
 }
 
 .about img {
@@ -129,8 +128,7 @@ ul > li {
 	background-color: #3882f6;
 	border: 2px solid #f9faf8;
    border-radius: 5px;
-   padding-left: 25px;
-   padding-right: 25px;
+   padding-inline: 25px;
    padding-bottom: 5px;
    padding-top: 5px;
 }
@@ -147,3 +145,41 @@ footer {
    padding-bottom: 20px;
    padding-top: 20px;
 }
+
+@media (max-width: 768px) {
+	header {
+	 padding: 1rem;
+	}
+
+	.about img {
+		display: none;
+	}
+ 
+	.about {
+	 flex-direction: column; /* Stack elements on smaller screens */
+	}
+ 
+	.pics-info {
+	 flex-direction: column; /* Stack image cards vertically */
+	 gap: 0;
+	}
+ }
+ 
+ @media (max-width: 480px) {
+	nav ul {
+	 flex-direction: column; /* Stack navigation items vertically */
+	 align-items: flex-start; /* Align items to the start */
+	}
+
+	@media (max-width: 660px) {
+		.action-text {
+			padding-left: 50px;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.action-button button {
+			margin-right: 50px;
+		}
+	}
+ }
